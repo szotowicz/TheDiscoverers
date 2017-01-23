@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7AA3EE68-39DA-4111-B500-3F61505CDCF2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Odkrywcy</RootNamespace>
+    <AssemblyName>Odkrywcy</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Area.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="FormOnStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOnStart.Designer.cs">
+      <DependentUpon>FormOnStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWithGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWithGame.Designer.cs">
+      <DependentUpon>FormWithGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormOnStart.resx">
+      <DependentUpon>FormOnStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWithGame.resx">
+      <DependentUpon>FormWithGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\old_map_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\name_of_game.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\four_players_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\four_players_unselected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\three_players_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\three_players_unselected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\two_players_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\two_players_unselected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\exit_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\europe_selected.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\europe_unselected.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\poland_select.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\poland_unselected.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\world_selected.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\world_unselected.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\poland_selected.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\play_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\dice_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\dice_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\dice_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\dice_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\dice_five.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\dice_four.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\dice_one.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\dice_six.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\dice_three.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\dice_two.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\throw_dice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\infoDice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\desk_img.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\map_of_poland.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\parchment_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\Bez nazwy 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\legend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\rules.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\open_legend_and_rules.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\start_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\start_BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\start_BY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\start_G.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\start_GBY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\start_R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\start_RB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\start_RBY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\start_RG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\start_RGB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\start_RGBY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\start_RGY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\start_RY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\start_Y.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\area_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\dot_player_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\dot_player_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\dot_player_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\dot_player_yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\question_mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\open_diceBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\start_clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\start_GY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Image\scroll_parchment.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

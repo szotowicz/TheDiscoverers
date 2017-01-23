@@ -1,0 +1,10 @@
+C:\Users\Mikołaj\Desktop\Odkrywcy\Odkrywcy\Odkrywcy\bin\Debug\Odkrywcy.exe.config
+C:\Users\Mikołaj\Desktop\Odkrywcy\Odkrywcy\Odkrywcy\bin\Debug\Odkrywcy.exe
+C:\Users\Mikołaj\Desktop\Odkrywcy\Odkrywcy\Odkrywcy\bin\Debug\Odkrywcy.pdb
+C:\Users\Mikołaj\Desktop\Odkrywcy\Odkrywcy\Odkrywcy\obj\Debug\Odkrywcy.csprojResolveAssemblyReference.cache
+C:\Users\Mikołaj\Desktop\Odkrywcy\Odkrywcy\Odkrywcy\obj\Debug\Odkrywcy.FormOnStart.resources
+C:\Users\Mikołaj\Desktop\Odkrywcy\Odkrywcy\Odkrywcy\obj\Debug\Odkrywcy.Properties.Resources.resources
+C:\Users\Mikołaj\Desktop\Odkrywcy\Odkrywcy\Odkrywcy\obj\Debug\Odkrywcy.csproj.GenerateResource.Cache
+C:\Users\Mikołaj\Desktop\Odkrywcy\Odkrywcy\Odkrywcy\obj\Debug\Odkrywcy.exe
+C:\Users\Mikołaj\Desktop\Odkrywcy\Odkrywcy\Odkrywcy\obj\Debug\Odkrywcy.pdb
+C:\Users\Mikołaj\Desktop\Odkrywcy\Odkrywcy\Odkrywcy\obj\Debug\Odkrywcy.FormWithGame.resources
