@@ -1,4 +1,4 @@
-# The-discoverers
+# TheDiscoverers-Csharp
 The project developed in C#. Simulation of an educational board game.
 
 See screenshots (game_?.jpg). The project with the source code is located in the .zip file.
